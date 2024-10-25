@@ -1,0 +1,336 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+#pw-header {
+    background: linear-gradient(to right, #9a0ba7, #6610f2);
+    color: #fff;
+    padding: 20px;
+}
+
+.practice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+    height: 100px;
+    background: linear-gradient(to right, #cf14e0, #6610f2);
+    border-radius: 50%;
+
+}
+
+.practice-name {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.location {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.phone {
+    margin-bottom: 10px;
+}
+
+.button-link {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.mobile-menu-btn-container {
+    display: none; /* Adjust for mobile responsiveness */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Section Styles */
+.section-inner {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.bg-image {
+    background-image: url('images/lavender-3576129_1280.jpg'); /* Add a valid image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.section-subtitle {
+    font-size: 1.8em;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tag {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #611768;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer .subtitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-list {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-list li {
+    margin-right: 15px;
+}
+
+.social-media-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mobile-menu-btn-container {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        display: none; /* Toggle with JavaScript for mobile */
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+}
+.pw-section {
+    padding: 60px 0;
+    background: linear-gradient(to right, #9a0ba7, #6610f2);
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.tag-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tag-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 5px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.approaches-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.approach-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(45% - 20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card h5 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+    margin-top: 30px; /* Space above the button container */
+}
+
+.button-container button {
+    background-color: #007bff; /* Primary color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 20px; /* Padding for the buttons */
+    font-size: 1.1em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for smooth effects */
+    position: relative; /* For pseudo-element positioning */
+}
+
+.button-container button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.button-link {
+    color: white; /* Text color for link */
+    text-decoration: none; /* Remove underline */
+}
+
+.request-appointment-btn {
+    background-color: #28a745; /* Secondary color */
+}
+
+.request-appointment-btn:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+.about-section {
+    background: linear-gradient(to right, #9a0ba7, #6610f2); /* Light background */
+    padding: 50px 20px; /* Padding for the section */
+    text-align: center; /* Center-align text */
+    margin-bottom: 15px;
+}
+
+.section-inner {
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto; /* Center the section */
+}
+
+.about-section h2 {
+    font-size: 2.5em; /* Main title size */
+    color: white; /* Primary color for title */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.mission {
+    font-size: 1.2em; /* Font size for mission statement */
+    color: white;/* Dark color for text */
+    margin-bottom: 30px; /* Space below mission statement */
+}
+
+.values, .overview {
+    margin-bottom: 30px; /* Space below sections */
+}
+
+h3 {
+    font-size: 1.8em; /* Subtitle size */
+    color: white; /* Secondary color for subtitles */
+    margin-bottom: 15px; /* Space below subtitles */
+}
+
+.values ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.values li {
+    font-size: 1.1em; /* Font size for values */
+    margin: 10px 0; /* Space between list items */
+    color: white; /* Dark color for list items */
+}
+
+.overview p {
+    font-size: 1em; /* Font size for overview text */
+    color: white;/* Slightly lighter color for overview text */
+    line-height: 1.6; /* Improved line spacing for readability */
+}

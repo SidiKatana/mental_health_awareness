@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form id="registrationForm">
+            <h3>REGISTRATION FORM</h3>
+            
+            <div class="inputbox">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <span id="nameError" class="error"></span>
+            </div>
+            
+            <div class="inputbox">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age" required>
+                <span id="ageError" class="error"></span>
+            </div>
+
+            <div class="inputbox">
+                <label for="gender">Select your gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="others" name="gender" value="Others">
+                <label for="others">Others</label><br>
+                <span id="genderError" class="error"></span>
+            </div>
+            
+            <div class="inputbox">
+                <label for="country">Country:</label>
+                <select id="country" required>
+                    <option value="">Select your country</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Others">Others</option>
+                </select>
+                <span id="countryError" class="error"></span>
+            </div>
+
+            <div class="inputbox">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+            
+            <div class="inputbox">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+            
+            <div class="inputbox">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                <span id="confirmPasswordError" class="error"></span>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" required> I agree to the <a href="#">terms and conditions</a>.
+                </label>
+                <span id="termsError" class="error"></span>
+            </div>
+            
+            <button type="submit" class="btn">Register</button>
+            <div class="register-section">
+                <p>Already have an account? <a href="login.html">log in</a></p>
+            </div>
+        </form>
+       
+    </div>
+
+    <script src="Regvalidation.js"></script>
